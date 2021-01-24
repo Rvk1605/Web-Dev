@@ -28,6 +28,7 @@
             width: 50%;
             border: solid white;
             margin: 20px auto;
+            border-radius: 5px;
 
         }
 
@@ -66,7 +67,6 @@
             color: darkorange;
             font-family: 'Times New Roman', Times, serif;
             font-weight: bold;
-
         }
 
         .facebook {
@@ -105,13 +105,53 @@
         }
 
         .container {
-            margin: 90px;
+            margin: 80px;
             border: 3px solid white;
-            padding: 30px;
+            padding: 20px;
             color: white;
             display: inline-block;
             width: 500px;
             border-radius: 3px;
+        }
+
+        .btn {
+            height: 25px;
+            width: 75px;
+            border: solid 3px white;
+            color: black;
+            background-color: chocolate;
+        }
+
+        .btn:hover {
+            background-color: goldenrod;
+        }
+
+        .forgot a {
+            color: yellow;
+            text-decoration: none;
+        }
+
+        div a:hover {
+            color: aqua;
+        }
+
+        .forms input {
+            text-align: center;
+            border-radius: 5px;
+            width: 150px;
+            border: 2px solid yellow;
+        }
+
+        .container h1 {
+            text-align: center;
+            font-size: xx-large;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .container div {
+            font-size: large;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: yellow;
         }
     </style>
 </head>
@@ -135,7 +175,8 @@
         </div>
         <div class="right">
             <div class="facebook">
-                <button><img src="facebook-logo-3.png" alt=""> <br> <a href="https://www.facebook.com/">Like us
+                <button><img src="facebook-logo-3.png" alt=""> <br> <a href="https://www.facebook.com/"
+                        target="_blank">Like us
                         on</a></button>
 
             </div>
@@ -148,24 +189,24 @@
     <div class="container">
         <h1>Create Your Own Virtual Library</h1>
         <form action="submit.php">
-            <div>
-                Name : <input type="text" name="name" id="" placeholder="name">
+            <div class="forms">
+                Name : <input type="text" name="name" id="" placeholder="name" required>
             </div>
             <br>
-            <div>
+            <div class="forms">
                 Email : <input type="email" placeholder="email" required>
             </div>
             <br>
-            <div>
-                Mobile : <input type="tel" name="phone" id="">
+            <div class="forms">
+                Mobile : <input type="tel" name="phone" id="" placeholder="phone">
             </div>
             <br>
-            <div>
+            <div class="forms">
                 D.O.B : <input type="date" name="" id="">
             </div>
             <br>
-            <div>
-                University/College : <input type="text" name="" id="">
+            <div class="forms">
+                University/College : <input type="text" name="" id="" placeholder="University">
             </div>
             <br>
             <div>
@@ -173,19 +214,16 @@
                 Private
             </div>
             <br>
-            <div>
-                <button>Sign Up</button>
-                <input type="reset">
+            <div class="forms">
+                <button class="btn">Sign Up</button>
+                <button class="btn"> <a href="Sign"></a> Sign in</button>
             </div>
             <br>
-            <div>
-                <a href="">Click here to Sign In</a>
+            <div class="forgot">
+                <a href="">Forgot Password??</a>
             </div>
-
-
         </form>
     </div>
-
 </body>
 
 </html>
