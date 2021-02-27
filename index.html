@@ -4,226 +4,438 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rvk's Library</title>
+    <title>My Profile</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
-    <style>
-        body {
-            background: url('books-2596809_1920.jpg');
-            margin: 0px;
-            padding: 0px;
-            height: auto;
-        }
-
-        .left {
-            display: inline-block;
-            border: solid orange;
-            position: absolute;
-            top: 20px;
-            left: 20px;
-        }
-
-        .mid {
-            display: block;
-            width: 50%;
-            border: solid white;
-            margin: 20px auto;
-            border-radius: 5px;
-
-        }
-
-        .right {
-            display: inline-block;
-            position: absolute;
-            top: 20px;
-            right: 10px;
-        }
-
-        img {
-            width: 90px;
-            height: 90px;
-        }
-
-        .navbar li {
-            display: inline-block;
-        }
-
-        .navbar li a {
-            color: lime;
-            text-decoration: none;
-            padding: 10px;
-            font-size: x-large;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        }
-
-        .navbar li a:hover,
-        .navbar li a:active {
-            color: burlywood;
-            text-decoration: underline;
-        }
-
-        .logo {
-            text-align: center;
-            color: darkorange;
-            font-family: 'Times New Roman', Times, serif;
-            font-weight: bold;
-        }
-
-        .facebook {
-            display: inline-block;
-        }
-
-        .feedback {
-            display: inline-block;
-        }
-
-        .facebook a {
-            text-decoration: none;
-        }
-
-        .feedback a {
-            text-decoration: none;
-        }
-
-        .facebook button a:hover {
-            color: orange;
-        }
-
-        .feedback button a:hover {
-            color: orange;
-        }
-
-        .facebook button img {
-            width: 40px;
-            height: 40px;
-            margin-right: 4px;
-        }
-
-        .feedback button img {
-            width: 40px;
-            height: 40px;
-        }
-
-        .container {
-            margin: 80px;
-            border: 3px solid white;
-            padding: 20px;
-            color: white;
-            display: inline-block;
-            width: 500px;
-            border-radius: 3px;
-        }
-
-        .btn {
-            height: 25px;
-            width: 75px;
-            border: solid 3px white;
-            color: black;
-            background-color: chocolate;
-        }
-
-        .btn:hover {
-            background-color: goldenrod;
-        }
-
-        .forgot a {
-            color: yellow;
-            text-decoration: none;
-        }
-
-        div a:hover {
-            color: aqua;
-        }
-
-        .forms input {
-            text-align: center;
-            border-radius: 5px;
-            width: 150px;
-            border: 2px solid yellow;
-        }
-
-        .container h1 {
-            text-align: center;
-            font-size: xx-large;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        }
-
-        .container div {
-            font-size: large;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            color: yellow;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aguafina+Script&family=Kaushan+Script&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e53f16418b.js" crossorigin="anonymous"></script>
 </head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .header {
+        height: 78vh;
+        background-image: url("background1.jpg");
+        background-size: cover;
+        background-position: center;
+        /* opacity: 0.;  */
+        background-attachment: fixed;
+        padding: 0px;
+    }
+
+    .logo {
+        position: fixed;
+    }
+
+    .logo img {
+        display: block;
+        margin: 0px 10px 10px 10px;
+        height: 60px;
+        width: 75px;
+    }
+
+    .hello {
+        display: inline-block;
+        font-size: 80px;
+        margin-left: 40px;
+        margin-top: 90px;
+    }
+
+    .p1 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin: auto;
+        margin-top: 20px;
+        margin-left: 140px;
+    }
+
+    .p2 {
+        margin: auto;
+        font-family: 'Aguafina Script', cursive;
+        font-size: 150px;
+        font-weight: 300;
+        color: rgb(255, 251, 0);
+        margin-left: 175px;
+    }
+
+    .p2:hover {
+        color: aqua;
+        transition: color 2s;
+    }
+
+    .desg {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        font-size: x-large;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .navbar {
+        background-color: lightsteelblue;
+        list-style: none;
+        text-align: center;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 25px;
+        padding-right: 25px;
+        border-radius: 3px;
+        margin-left: 11%;
+        position: fixed;
+        margin-top: 0%;
+        margin-left: 125px;
+    }
+
+    .item {
+        display: inline-block;
+        margin: 0px 10px 10px 25px;
+
+    }
+
+    .navbar a:hover {
+        color: rgb(0, 60, 255);
+        text-decoration: underline;
+        transition: color 0.5s;
+    }
+
+    /* Social Platforms Decoration */
+    .social {
+        position: absolute;
+        right: 30px;
+        display: inline-block;
+        margin-top: 80px;
+        margin-right: 25px;
+    }
+
+    .social ul {
+        list-style: none;
+    }
+
+    .social ul li i {
+        padding: 20px;
+        margin-top: 10px;
+        color: aliceblue;
+    }
+
+    .social_logo a i:hover {
+        color: rgb(0, 102, 255);
+        box-shadow: 0px 0px 2px 2px gray;
+    }
+
+    #insta:hover a i {
+        color: white;
+    }
+
+    #google:hover a i {
+        color: red;
+    }
+
+
+    /* After this Is About Section */
+    .about {
+        text-align: center;
+        height: 50vh;
+        background-size: cover;
+        background-position: center;
+        background-color: white;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .bottom {
+        text-align: center;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .about p {
+        padding-top: 40px;
+        margin: auto;
+        text-align: center;
+        width: 750px;
+        color: rgb(0, 37, 247);
+        font-size: larger;
+
+    }
+
+    b {
+        font-size: Xx-large;
+        color: white;
+    }
+
+    .my_image img {
+        display: inline-block;
+        width: 250px;
+        height: 250px;
+        border-radius: 130px;
+        margin-top: -17vh;
+        border: 3px solid white;
+        padding: 0%;
+    }
+
+    /* this is skill section */
+    .skills {
+        height: 300px;
+    }
+
+    .skills_logo {
+        text-align: center;
+    }
+
+    .skills_logo:hover {
+        color: gray;
+        transition: 0.5s;
+    }
+
+    .skills_container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        width: auto;
+        margin-left: 50px;
+
+    }
+
+    .skills_progress {
+        width: 20rem;
+        height: 1.25rem;
+        background-color: gray;
+        border-radius: 0.8rem;
+        margin-left: 175px;
+        margin-top: 50px;
+    }
+
+    .seventy_percent {
+        width: 70%;
+        height: inherit;
+        border-radius: 0.8rem;
+        background-color: rgb(0, 255, 191);
+    }
+
+    .eighty_percent {
+        width: 80%;
+        height: inherit;
+        border-radius: 0.8rem;
+        background-color: rgb(179, 255, 0);
+    }
+
+    .sixty_percent {
+        width: 60%;
+        height: inherit;
+        border-radius: 0.8rem;
+        background-color: rgb(145, 255, 0);
+    }
+
+    .fifty_percent {
+        width: 50%;
+        height: inherit;
+        border-radius: 0.8rem;
+        background-color: rgb(229, 255, 0);
+    }
+
+    .forty_percent {
+        width: 40%;
+        height: inherit;
+        border-radius: 0.8rem;
+        background-color: rgb(255, 174, 0);
+    }
+
+    .thirty_percent {
+        width: 30%;
+        height: inherit;
+        border-radius: 0.8rem;
+        background-color: rgb(255, 60, 0);
+    }
+
+    span {
+        margin-left: 20px;
+    }
+
+
+
+    /* this is Education section */
+    .education {
+        text-align: center;
+        height: 250px;
+        border: 3px solid black;
+    }
+
+    /* this id Achievement section */
+    .achievements {
+        text-align: center;
+        height: 250px;
+        border: 3px solid black;
+    }
+
+    /* this is project section */
+    .projects {
+        text-align: center;
+        height: 250px;
+        border: 3px solid black;
+    }
+
+    /* this is hobby section */
+    .hobbies {
+        text-align: center;
+        height: 250px;
+        border: 3px solid black;
+    }
+</style>
 
 <body>
-    <header>
-        <div class="left">
-            <img src="library_logo.jpg" alt="Image Not Found">
-            <div class="logo ">
-                My Library
+    <header class="header">
+        <div id="navigation">
+            <div class="logo">
+                <img src="Logo.png" alt="Image Not Found">
             </div>
-        </div>
-        <div class="mid">
             <ul class="navbar">
-                <li> <a href="">Home</a> </li>
-                <li> <a href="">My Books</a></li>
-                <li> <a href="">My Notes</a></li>
-                <li><a href="">Search</a></li>
-                <li> <a href="">About Us</a></li>
+                <li class="item"><a href=""><strong>Home</strong> </a></li><b>|</b>
+                <li class="item"><a href=""><strong>Skills</strong></a></li><b>|</b>
+                <li class="item"><a href=""><strong>Education</strong></a></li><b>|</b>
+                <li class="item"><a href=""><strong>Achievements</strong></a></li><b>|</b>
+                <li class="item"><a href=""><strong>Projects</strong></a></li><b>|</b>
+                <li class="item"><a href=""><strong>Hobby</strong></a></li><b>|</b>
+                <li class="item"><a href=""><strong>Contact</strong></a></li>
+
             </ul>
         </div>
-        <div class="right">
-            <div class="facebook">
-                <button><img src="facebook-logo-3.png" alt=""> <br> <a href="https://www.facebook.com/"
-                        target="_blank">Like us
-                        on</a></button>
 
-            </div>
-            <div class="feedback">
-                <button><img src="feedback.png" alt=""><br> <a href=""> Give Feedback</a></button>
-            </div>
+        <div class="hello">
+            <p class="p1">Hola, I'm <br></p>
+            <p class="p2">Rajveer</p>
         </div>
+
+        <div class="social">
+            <ul>
+                <li class="social_logo"><a href="https://www.facebook.com/" target="_blank"><i
+                            class="fab fa-facebook fa-2x"></i></a></li>
+                <li class="social_logo" id="insta"><a href="https://www.instagram.com/" target="_blank"><i
+                            class="fab fa-instagram fa-2x"></i></a></li>
+                <li class="social_logo"><a href="https://www.linkedin.com/in/rajveer-kumar-4757021a1/"
+                        target="_blank"><i class="fab fa-linkedin-in fa-2x"></i></a></li>
+                <li class="social_logo" id="google"><a href="https://myaccount.google.com/" target="_blank"><i
+                            class="fab fa-google-plus-g fa-2x"></i></a></li>
+            </ul>
+        </div>
+
     </header>
 
-    <div class="container">
-        <h1>Create Your Own Virtual Library</h1>
-        <form action="submit.php">
-            <div class="forms">
-                Name : <input type="text" name="name" id="" placeholder="name" required>
+    <main class="middle">
+        <div class="about">
+            <div class="my_image">
+                <img src="my_image.jpg" alt="image not found">
             </div>
-            <br>
-            <div class="forms">
-                Email : <input type="email" placeholder="email" required>
+            <p>Hi!, I am <strong>Rajveer Kumar</strong>,a 2nd Year B.tech Student at <strong>KIIT Univeristy</strong>.
+            </p>
+        </div>
+
+        <div class="skills">
+
+            <div class="skills_logo">
+                <i class="fas fa-chalkboard-teacher fa-3x"> Skills </i>
             </div>
-            <br>
-            <div class="forms">
-                Mobile : <input type="tel" name="phone" id="" placeholder="phone">
+
+            <div class="skills_container">
+                <div class="skills_progress">
+                    <div class="eighty_percent">
+                        <div class="skill_name">
+                            <span>C</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills_progress">
+                    <div class="seventy_percent">
+                        <div class="skill_name">
+                            <span>C++</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills_progress">
+                    <div class="sixty_percent">
+                        <div class="skill_name">
+                            <span>HTML</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills_progress">
+                    <div class="fifty_percent">
+                        <div class="skill_name">
+                            <span>CSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills_progress">
+                    <div class="forty_percent">
+                        <div class="skill_name">
+                            <span>Java</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills_progress">
+                    <div class="thirty_percent">
+                        <div class="skill_name">
+                            <span>Python</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <br>
-            <div class="forms">
-                D.O.B : <input type="date" name="" id="">
+
+        </div>
+
+
+        <div class="education">
+            <div class="education_logo">
+                <i class="fas fa-book-reader fa-3x"> Education</i>
             </div>
-            <br>
-            <div class="forms">
-                University/College : <input type="text" name="" id="" placeholder="University">
+            <div class="education_container"></div>
+        </div>
+
+        <div class="achievements">
+            <div class="achievements_logo">
+
             </div>
-            <br>
-            <div>
-                Privacy : <input type="radio" name="privacy" id="">Public <input type="radio" name="privacy" id="">
-                Private
+            <div class="achievements_container">
+                <i class="fas fa-user-graduate fa-3x"> Achievements</i>
             </div>
-            <br>
-            <div class="forms">
-                <button class="btn">Sign Up</button>
-                <button class="btn"> <a href="Sign"></a> Sign in</button>
+        </div>
+
+
+        <div class="projects">
+            <div class="projects_logo">
+                <i class="fas fa-user-astronaut fa-3x"> Projects</i>
             </div>
-            <br>
-            <div class="forgot">
-                <a href="">Forgot Password??</a>
+            <div class="projects_container">
+
             </div>
-        </form>
-    </div>
+        </div>
+
+        <div class="hobbies">
+            <div class="hobbies_logo">
+                <i class="fas fa-user-astronaut fa-3x"> Hobbies</i>
+            </div>
+            <div class="hobbies_container">
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="bottom">
+        This is Foot
+    </footer>
 </body>
 
 </html>
